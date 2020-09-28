@@ -1186,52 +1186,9 @@
                     <div class="s-subscribe-action__description">на первую покупку!</div>
                     <div class="s-subscribe-action__percent">2<span>%</span></div>
                 </div>
-                <script type="text/javascript">if (window.location.hash != '' && window.location.hash != '#') top.BX.ajax.history.checkRedirectStart('bxajaxid', '42041f937f9cd2a548ba72c6218cef35')</script>
                 <div id="comp_42041f937f9cd2a548ba72c6218cef35">
                     <div class="s-subscribe__form" id="sender-subscribe">
                         <!--'start_frame_cache_sender-subscribe'-->
-                        <script>
-                            (function () {
-                                var btn = BX('bx_subscribe_btn_sljzMT');
-                                var form = BX('bx_subscribe_subform_sljzMT');
-
-                                if (!btn) {
-                                    return;
-                                }
-
-                                function mailSender() {
-                                    setTimeout(function () {
-                                        if (!btn) {
-                                            return;
-                                        }
-
-                                        var btn_span = btn.querySelector("span");
-                                        var btn_subscribe_width = btn_span.style.width;
-                                        BX.addClass(btn, "send");
-                                        btn_span.outterHTML = "<span><i class='fa fa-check'></i> ГОТОВО</span>";
-                                        if (btn_subscribe_width) {
-                                            btn.querySelector("span").style["min-width"] = btn_subscribe_width + "px";
-                                        }
-                                    }, 400);
-                                }
-
-                                BX.ready(function () {
-                                    BX.bind(btn, 'click', function () {
-                                        setTimeout(mailSender, 250);
-                                        return false;
-                                    });
-                                });
-
-                                BX.bind(form, 'submit', function () {
-                                    btn.disabled = true;
-                                    setTimeout(function () {
-                                        btn.disabled = false;
-                                    }, 2000);
-
-                                    return true;
-                                });
-                            })();
-                        </script>
 
                         <form class="subscribe-form" id="bx_subscribe_subform_sljzMT" role="form" method="post"
                               action="/"><input type="hidden" name="bxajaxid"
@@ -1239,22 +1196,6 @@
                                                 value="42041f937f9cd2a548ba72c6218cef35"/><input type="hidden"
                                                                                                  name="AJAX_CALL"
                                                                                                  value="Y"/>
-                            <script type="text/javascript">
-                                function _processform_8BACKi() {
-                                    if (BX('bxajaxid_42041f937f9cd2a548ba72c6218cef35_8BACKi')) {
-                                        var obForm = BX('bxajaxid_42041f937f9cd2a548ba72c6218cef35_8BACKi').form;
-                                        BX.bind(obForm, 'submit', function () {
-                                            BX.ajax.submitComponentForm(this, 'comp_42041f937f9cd2a548ba72c6218cef35', true)
-                                        });
-                                    }
-                                    BX.removeCustomEvent('onAjaxSuccess', _processform_8BACKi);
-                                }
-
-                                if (BX('bxajaxid_42041f937f9cd2a548ba72c6218cef35_8BACKi'))
-                                    _processform_8BACKi();
-                                else
-                                    BX.addCustomEvent('onAjaxSuccess', _processform_8BACKi);
-                            </script>
 
                             <input type="hidden" name="sessid" id="sessid" value="a14b090104ad74e7f985c57090e76f60"/>
                             <input type="hidden" name="sender_subscription" value="add">
@@ -1281,11 +1222,6 @@
                         </form>
                         <!--'end_frame_cache_sender-subscribe'--></div>
                 </div>
-                <script type="text/javascript">if (top.BX.ajax.history.bHashCollision) top.BX.ajax.history.checkRedirectFinish('bxajaxid', '42041f937f9cd2a548ba72c6218cef35');</script>
-                <script type="text/javascript">top.BX.ready(BX.defer(function () {
-                    window.AJAX_PAGE_STATE = new top.BX.ajax.component('comp_42041f937f9cd2a548ba72c6218cef35');
-                    top.BX.ajax.history.init(window.AJAX_PAGE_STATE);
-                }))</script>
             </div>
         </div>
     </div>
