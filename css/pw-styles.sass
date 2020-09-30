@@ -20,11 +20,13 @@ $red: #e00000
     &_left
       width: 100%
 
+      .service_big
+        height: 500px
+
       img
         width: 100%
         -o-object-fit: cover
         object-fit: cover
-        max-height: 500px
         object-position: top
 
       .service_top
@@ -52,6 +54,9 @@ $red: #e00000
 
           span
             color: $red
+
+      .service_middle
+        margin-bottom: 20px
 
     &_right
       flex: 0 0 500px
@@ -113,7 +118,7 @@ $red: #e00000
             margin-bottom: 50px
 
             img
-              max-width: 100%
+              max-width: 80px
 
           &_white
             font-family: 'Open Sans', sans-serif
@@ -191,6 +196,7 @@ $red: #e00000
     &__partners
       background: url("../images/lines-bg.jpg") 100% 100% no-repeat
       padding: 50px
+      background-size: cover
 
       h2
         font-family: 'Open Sans', sans-serif
@@ -271,6 +277,11 @@ $red: #e00000
     &__first
       position: relative
       margin-bottom: 20px
+
+      img
+        min-height: 500px
+        -o-object-fit: cover
+        object-fit: cover
 
       .circle
         position: absolute
@@ -530,3 +541,5 @@ $red: #e00000
           border-radius: 50%
           top: 20px
           left: 20px
+
+@import "responsive"

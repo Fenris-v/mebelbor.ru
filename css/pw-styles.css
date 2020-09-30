@@ -12,11 +12,12 @@
     object-fit: cover; }
   .pw-container .service_left {
     width: 100%; }
+    .pw-container .service_left .service_big {
+      height: 500px; }
     .pw-container .service_left img {
       width: 100%;
       -o-object-fit: cover;
       object-fit: cover;
-      max-height: 500px;
       object-position: top; }
     .pw-container .service_left .service_top {
       padding-top: 60px;
@@ -38,6 +39,8 @@
       margin-bottom: 20px; }
       .pw-container .service_left_half__title span {
         color: #e00000; }
+    .pw-container .service_left .service_middle {
+      margin-bottom: 20px; }
   .pw-container .service_right {
     flex: 0 0 500px;
     padding-left: 40px;
@@ -87,7 +90,7 @@
         align-items: center;
         margin-bottom: 50px; }
         .pw-container .service__last .service_left_half__img img {
-          max-width: 100%; }
+          max-width: 80px; }
       .pw-container .service__last .service_left_half_white {
         font-family: "Open Sans", sans-serif;
         font-weight: 600;
@@ -150,7 +153,8 @@
     max-width: 60%; }
 .pw-container .master__partners {
   background: url("../images/lines-bg.jpg") 100% 100% no-repeat;
-  padding: 50px; }
+  padding: 50px;
+  background-size: cover; }
   .pw-container .master__partners h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -217,6 +221,10 @@
 .pw-container .credit__first {
   position: relative;
   margin-bottom: 20px; }
+  .pw-container .credit__first img {
+    min-height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover; }
   .pw-container .credit__first .circle {
     position: absolute;
     left: 200px;
@@ -438,5 +446,138 @@
     border-radius: 50%;
     top: 20px;
     left: 20px; }
+
+@media only screen and (max-width: 2000px) {
+  .pw-container .credit__term {
+    padding: 40px 20px; } }
+@media only screen and (max-width: 1800px) {
+  .pw-container .credit__term {
+    width: 24%; } }
+@media only screen and (max-width: 1600px) {
+  .pw-container .service {
+    flex-wrap: wrap;
+    margin-bottom: 60px; }
+    .pw-container .service_left {
+      width: 100%;
+      margin-bottom: 40px; }
+      .pw-container .service_left p {
+        margin-right: 0; }
+    .pw-container .service_right {
+      width: 100%;
+      flex: 0 0 100%;
+      padding-left: 0; }
+      .pw-container .service_right p {
+        margin-bottom: 40px; }
+      .pw-container .service_right img {
+        margin: 0 auto; }
+    .pw-container .service_left .service_top {
+      padding-top: 0;
+      padding-right: 0; }
+    .pw-container .service_left .service_middle {
+      margin-right: 0;
+      margin-bottom: 0; }
+  .pw-container .service__last {
+    margin-bottom: 0; }
+    .pw-container .service__last .service_right {
+      padding: 0; }
+    .pw-container .service__last .service_left_half:first-child {
+      padding-right: 30px; }
+  .pw-container .master__first__container {
+    width: 100%;
+    margin-bottom: 40px; }
+  .pw-container .master__first__bg {
+    position: static;
+    margin-left: auto;
+    display: block; }
+  .pw-container .master__first {
+    padding-bottom: 0; }
+  .pw-container .master__partners__advantages {
+    flex-wrap: wrap; }
+    .pw-container .master__partners__advantages__item {
+      width: 49%;
+      margin-bottom: 20px; }
+  .pw-container .credit__first__text_top {
+    font-size: 80px; }
+  .pw-container .credit__first__text_middle {
+    font-size: 55px; }
+  .pw-container .credit__first__text_bottom {
+    font-size: 45px; }
+  .pw-container .credit__first .circle {
+    left: 100px; }
+  .pw-container .credit__first__text {
+    left: 110px; }
+  .pw-container .credit__banks__step::after {
+    display: none; }
+  .pw-container .credit__banks__step:nth-child(4) {
+    order: 4; }
+  .pw-container .credit__banks__step:nth-child(6) {
+    order: 6; } }
+@media only screen and (max-width: 1280px) {
+  .pw-container .service__last .service_left {
+    flex-wrap: wrap; }
+    .pw-container .service__last .service_left_half {
+      width: 100%; }
+  .pw-container .service__last .service_left_half:first-child {
+    padding-right: 0; }
+  .pw-container .master__partners__advantages__item {
+    padding: 40px 20px 20px; }
+  .pw-container .master__partners__advantages {
+    margin-bottom: 20px; }
+  .pw-container .credit__term {
+    width: 32.5%; }
+  .pw-container .credit__banks__step {
+    width: 48%; } }
+@media only screen and (max-width: 640px) {
+  .pw-container .service_left {
+    margin-bottom: 20px; }
+    .pw-container .service_left .service_top {
+      font-size: 22px;
+      line-height: 1.3; }
+  .pw-container .service_top {
+    font-size: 18px; }
+  .pw-container .service {
+    margin-bottom: 40px; }
+    .pw-container .service:last-child {
+      margin-bottom: 0; }
+  .pw-container .service_left_half__title {
+    font-size: 20px;
+    line-height: 1.3; }
+  .pw-container .service__last .service_left_half:last-child {
+    padding: 40px 20px 20px; }
+  .pw-container .service__last .service_left_half__img {
+    margin-bottom: 20px; }
+  .pw-container .service__last .service_left_half_white {
+    font-size: 20px;
+    line-height: 1.3; }
+  .pw-container .master__first__title {
+    font-size: 22px;
+    line-height: 1.3; }
+  .pw-container .btn {
+    padding: 0 20px;
+    white-space: nowrap; }
+  .pw-container .master__partners {
+    padding: 20px; }
+    .pw-container .master__partners h2 {
+      margin-bottom: 20px; }
+  .pw-container .master__partners__advantages__item {
+    width: 100%; }
+  .pw-container .master__partners__description {
+    font-size: 20px;
+    line-height: 1.3; }
+  .pw-container .credit__term {
+    width: 49%; }
+  .pw-container .credit__banks__title {
+    font-size: 22px;
+    line-height: 1.3; }
+  .pw-container .credit__banks__list li {
+    font-size: 18px;
+    line-height: 25px; }
+  .pw-container .credit__banks__step {
+    width: 100%; } }
+@media only screen and (max-width: 480px) {
+  .pw-container .master__partners .btn {
+    letter-spacing: -1px; }
+  .pw-container .credit__term {
+    width: 100%; } }
 
 /*# sourceMappingURL=pw-styles.css.map */
